@@ -1,0 +1,17 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# dependencies and build output
+node_modules/
+typescript/package-lock.json
+python/.venv/
+__pycache__/
+*.pyc
+*.tgz
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
