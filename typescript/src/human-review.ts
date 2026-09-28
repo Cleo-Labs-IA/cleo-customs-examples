@@ -2,7 +2,7 @@
 // has to approve the code before it goes into the ERP, and I need to show who
 // approved what, and when."
 //
-// Requires the review endpoints (live after PR #434). Until they appear in
+// Requires the review endpoints (live since 2026-09-26). If they are missing from
 // the live OpenAPI, this example SKIPS with an explicit message.
 //
 // Flow: classify with persist:true (stored under your account) -> approve the
@@ -21,7 +21,7 @@ import { ConflictError, NotFoundError } from '@cleo-legal/sdk';
 import { BASE_URL, calls, check, lastCall, makeClient, pass, run, skip } from './_shared.js';
 
 const REVIEW_PATH = '/v2/customs/classifications/{id}/review';
-const UNAVAILABLE = 'requires review endpoints (live after PR #434): not found on this deployment yet';
+const UNAVAILABLE = 'requires review endpoints: not found on this deployment';
 
 run(async () => {
   // Read-only probe of the public OpenAPI before writing anything.

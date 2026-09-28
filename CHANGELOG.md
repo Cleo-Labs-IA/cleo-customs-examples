@@ -17,5 +17,5 @@ Verified on 2026-09-25: `make test` against the production API, 10 passed and 1 
 Known limits of this version:
 
 - `@cleo-legal/sdk@0.9.0` is not on npm yet (npm serves `0.7.0` on 2026-09-25): `npm install` in `typescript/` fails until it is published. Use `make install SDK_TARBALL=...` with a packed SDK meanwhile.
-- The review endpoints are not live yet; `human-review.ts` skips with a message on the live API.
+- Review endpoints live since 2026-09-26; `human-review.ts` runs against production (it still skips with a message on a deployment that lacks them).
 - No lockfile is committed for `typescript/` while the SDK version is unpublished.
