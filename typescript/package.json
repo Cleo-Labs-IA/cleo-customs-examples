@@ -17,7 +17,7 @@
     "use-local-sdk": "sh ../scripts/use-local-sdk.sh"
   },
   "dependencies": {
-    "@cleo-legal/sdk": "0.9.0"
+    "@cleo-legal/sdk": "https://github.com/Cleo-Labs-IA/cleo-customs-examples/releases/download/sdk-v0.9.0/cleo-legal-sdk-0.9.0.tgz"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

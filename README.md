@@ -54,10 +54,10 @@ One live `make test` run costs 13 units (1 + 1 + 5 + 1 + 5). Check your remainin
 
 ## TypeScript SDK version
 
-The TypeScript examples use [`@cleo-legal/sdk`](https://www.npmjs.com/package/@cleo-legal/sdk) and pin `0.9.0`, the first version with `compliance.check`, the review methods and webhook V2 verification. On 2026-09-25 the npm registry still serves `0.7.0`, so `npm install` in `typescript/` fails until `0.9.0` is published. The Python and curl examples need no SDK and work today. If you have a tarball of the SDK (`npm pack`), install it without touching `package.json`:
+The TypeScript examples use `@cleo-legal/sdk` `0.9.0`, the first version with `compliance.check`, the review methods and webhook V2 verification. Until `0.9.0` reaches the npm registry (it still serves `0.7.0`), it is published as a [GitHub release of this repository](https://github.com/Cleo-Labs-IA/cleo-customs-examples/releases/tag/sdk-v0.9.0), and `typescript/package.json` installs it from there, so `npm install` works today. In your own project:
 
 ```bash
-make install SDK_TARBALL=/path/to/cleo-legal-sdk-0.9.0.tgz
+npm install https://github.com/Cleo-Labs-IA/cleo-customs-examples/releases/download/sdk-v0.9.0/cleo-legal-sdk-0.9.0.tgz
 ```
 
 ## Webhooks in one paragraph
